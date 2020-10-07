@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/10a7d97a34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="front-page">
+        <h1>Rock Paper Scissors</h1>
+        <button id="play-game">Play Game</button>
+    </div>
+
+    <div id="game-page">
+        <button id="back-btn">
+            <i class="fas fa-arrow-circle-left fa-2x hvr-icon"></i>
+            Back
+        </button>
+
+        <div id="game">
+            <div id="round">
+                <h3>Rock... Paper... Scissors!</h3>
+                <h3 id="start-round">Round Start!</h3>
+            </div>
+            <div id="game-icons">
+                <div id="computerPlay" class="computerPlay">
+                    <i id="compQuestion" class="far fa-question-circle fa-5x" title="Question Mark"></i>
+                    <i id="compRock" class="fas fa-hand-rock fa-5x" title="Rock"></i>
+                    <i id="compPaper" class="fas fa-hand-paper fa-5x" title="Paper"></i>
+                    <i id="compScissors" class="fas fa-hand-scissors fa-5x" title="Scissors"></i>
+                </div>
+                <div id="round-result">VS</div>
+                <div id="playerSelection">
+                    <div>
+                        <button id="rock" class="btn" title="Rock">
+                            <i class="fas fa-hand-rock fa-5x"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <button id="paper" class="btn" title="Paper">
+                            <i class="fas fa-hand-paper fa-5x"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <button id="scissors" class="btn" title="Scissors">
+                            <i class="fas fa-hand-scissors fa-5x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="end-game-results">
+                <span id="win">Win: 0</span>
+                <span id="loss">Loss: 0</span>
+                <span id="tie">Tie: 0</span>
+            </div>
+            <div id="start-play-again">
+                <button id="start">Start</button>
+                <button id="restart">Restart</button>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script text="text/javascript" src="script.js"></script>
+
+</html>

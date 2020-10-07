@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    /* border: solid; */
+}
+
+html,
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ef7a85;
+}
+
+#front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-bottom: 10rem;
+}
+
+#front-page button:hover {
+    border: 3px solid white;
+}
+
+h1 {
+    color: #6e44ff;
+    font-size: 3rem;
+}
+
+#play-game {
+    border-radius: 2rem;
+    color: #2f0085;
+    border: 3px solid black;
+    background-color: #d972ff;
+    font-size: 2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    outline: none;
+}
+
+#game-page {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 500px;
+}
+
+#back-btn {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 2rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    border: 3px solid black;
+    background-color: #d972ff;
+    color: #2f0085;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    outline:  none;
+    width: fit-content;
+}
+
+#back-btn:hover {
+    border: 3px solid white;
+}
+
+#back-btn .hvr-icon {
+    transform: translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    margin-right: 10px;
+}
+
+#back-btn:hover .hvr-icon{
+    transform: translateX(-4px);
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#round {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 150px;
+}
+
+#game-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
+}
+
+#round-result {
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+#playerSelection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.btn {
+    border:none;
+    border-radius: 1rem;
+    background-color:transparent;
+    outline:none;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+#rock {
+    background-color: #812b92;
+}
+
+#paper {
+    background-color: #d36992;
+}
+
+#scissors {
+    background-color: #cd50b4;
+}
+
+#computerPlay .fas {
+    display: none;
+}
+
+#end-game-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 400px;
+    padding: 10px 20px;
+}
+
+#end-game-results span {
+    padding: 5px;
+}
+
+#start-play-again {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+#start-play-again button {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 2rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    border: 3px solid black;
+    background-color: #d972ff;
+    color: #2f0085;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    outline:  none;
+    width: fit-content;
+}
+
+#start-play-again button:hover {
+    border: 3px solid white;
+}
