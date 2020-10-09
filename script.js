@@ -142,15 +142,16 @@ function displayComputerSelection(computerSelection) {
     const computerPlay = document.querySelector('.computerPlay');
 
     if (computerSelection === 'rock') {
-        showIcon('i', 'compRock')
+        showIcon('compRock')
     } else if (computerSelection === 'paper') {
-        showIcon('i', 'compPaper')
+        showIcon('compPaper')
     } else if (computerSelection === 'scissors') {
-        showIcon('i', 'compScissors')
+        showIcon('compScissors')
     }
 }
 
-function showIcon(hide, show) {
+//hide all i elements in #computerPlay and show element of specified id
+function showIcon(show) {
     const computerPlay = document.querySelector("#computerPlay");
     const i = computerPlay.querySelectorAll('i');
 
@@ -178,17 +179,9 @@ function gameBtn() {
 
 //gets value of btn element id ('rock', 'paper', 'scissors')
 function listener() {
-    let btnId = document.getElementsByClassName("btn")[0].id
-    play(btnId); //take function to global scope
-}
-
-//take result of btnId and inputing it through function game()
-function play(btnId) {
-    let playerSelection = btnId
+    let playerSelection = document.getElementsByClassName("btn")[0].id 
     game(playerSelection);
 }
-
-
 
 //passes playerSelection value from play() function
 function game(playerSelection) {
@@ -303,5 +296,5 @@ function gameReset() {
     const vs = document.querySelector('#round-result');
     vs.textContent = "VS";
 
-    showIcon('i', 'compQuestion')
+    showIcon('compQuestion')
 }
